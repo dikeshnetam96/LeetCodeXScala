@@ -6,3 +6,7 @@ lazy val root = (project in file("."))
   .settings(
     name := "LeetCode_01"
   )
+libraryDependencies ++= Seq(
+  "org.scalatest" %% "scalatest" % "latest.integration" % Test
+)
+

@@ -2,11 +2,11 @@ package exercises
 
 import scala.annotation.tailrec
 
+/*
+Problem Statement - Number of 1 Bits
+Problem Link - https://leetcode.com/problems/number-of-1-bits/
+ */
 object NumberOf1Bits extends App {
-  /*
-     Problem statement - > count the number of set bits of number.
-     Link - https://leetcode.com/problems/number-of-1-bits/
-      */
   def isBitSet(num: BigInt): Int = if ((num & ~(num - 1)) == 1) 1 else 0
 
   @tailrec
